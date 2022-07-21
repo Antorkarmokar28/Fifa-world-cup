@@ -10,8 +10,10 @@ google fonts
     padding:0;
     text-decoration:none;
     box-sizing:border-box;
+    list-style:none;
 }
 :root{
+    --aside-width:20%;
     --color-primary:#FFFFFF;
     --header-background:#6c63ff;
     --btn-background:#f75842;
@@ -20,12 +22,15 @@ google fonts
     --container-width-sm:94%;
 }
 body{
-    font-family: ;
-    line-height:1.7;
+    font-family: 'Roboto', sans-serif;
     color:var(--color-primary);
 }
 section{
     padding:6rem 0;
+}
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
 }
 img{
     width:100%;
@@ -33,9 +38,68 @@ img{
     object-fit:cover;
 }
 .btn{
-    display:inline-block;
+    display:
+    inline-block;
     background-color: var(--btn-background);
-    padding: 1rem 2rem;
+    padding: .8rem 2rem;
     border:1px solid transparent;
     font-weight:500;
+    border-radius:0.5rem;
+    color: var(--color-primary);
 }
+.fa-angle-right{
+    margin-left:5px;
+}
+/*===============
+    header 
+================*/
+.header-container{
+    display: grid;
+    grid-template-columns:
+    repeat(2, 1fr);
+    background: #1e1d36;
+    gap: 5rem;
+    height:100%;
+    border-radius: 1.5rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.header-left h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.header-left p{
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+.live-btn{
+    margin-top: 2rem;
+}
+/*===================
+     media-quiry
+===================== */
+/*===================
+     mobile responsive 
+====================*/
+@media screen and (max-width:576px){
+    .header-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-left h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .header-left p{
+        margin-top:1rem;
+        text-align: justify;
+    }
+    .live-btn{
+        display: block;
+        width: 50%;
+        margin: 1.4rem auto;
+    }
+}
+/*=============
+     blog style
+===============*/
