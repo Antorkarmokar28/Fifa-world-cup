@@ -2,117 +2,40 @@
 google fonts 
 ------- */
 @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@200;400;500&family=Poppins:ital,wght@0,300;0,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,700&display=swap');
-/*---------- common style 
---------------- */
+/*-----------------
+     common style 
+------------------ */
 *{
     margin: 0;
     padding:0;
+    text-decoration:none;
+    box-sizing:border-box;
+}
+:root{
+    --color-primary:#FFFFFF;
+    --header-background:#6c63ff;
+    --btn-background:#f75842;
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: ;
+    line-height:1.7;
+    color:var(--color-primary);
 }
-header, main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+section{
+    padding:6rem 0;
 }
-/* -------------
-header style start 
---------------*/
-.container{
-    width:992px;
-    background: #262626;
-    border-radius: 24px;
-}
-.header-wrap{
-    display:flex;
-}
-.header-info{
-    width:50%;
-    padding: 34px 50px;
-}
-.header-info h1{
-    color: #ffffff;
-    font-size: 58px;
-    font-weight: 800;
-    padding-bottom: 22px;
-}
-.header-info p{
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 19px;
-    padding-bottom: 24px;
-}
-.fa-angle-right{
-    margin-left: 6px;
-}
-.header-info a{
-    display:
-    block;
-    text-decoration: none;
-    background-color:
-    orangered;
-    color: #ffffff;
-    width: 23%;
-    padding: 12px 15px;
-    border-radius: 6px;
-    animation-name:animate;
-    animation-duration:2s;
-}
-/*---------
-     animate
------------ */
-@keyframes animate {
-    0%{
-        background-color:green;
-        color: #ffffff;
-    }
-    50%{
-        background:blueviolet;
-        color: #ffffff;
-    }
-    100%{
-        background-color: yellow;
-        color: #ffffff;
-    }
-}
-.header-thumbnail{
-    width:50%;
-    padding-right: 40px;
-}
-.header-thumbnail img{
+img{
     width:100%;
-    vertical-align: middle;
+    display:block;
+    object-fit:cover;
 }
-/*--------------
-    responsive style
-------------- */
-@media screen and (max-width:576px){
-    .header-wrap{
-        flex-direction: column;
-        align-items: center;
-    }
-    .container{
-        width:100%;
-    }
-    /* .header-info {
-        padding: 0;
-     }  */
-    .header-info h1{
-        justify-content:
-        center;
-        font-size: 31px;
-        text-align: center;
-    }
-    .header-info a{
-        width: 55%;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .header-thumbnail{
-        padding:0;
-    }
+.btn{
+    display:inline-block;
+    background-color: var(--btn-background);
+    padding: 1rem 2rem;
+    border:1px solid transparent;
+    font-weight:500;
 }
-/* -------------
-header style end 
---------------*/
