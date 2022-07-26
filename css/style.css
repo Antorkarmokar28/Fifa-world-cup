@@ -21,6 +21,9 @@ body{
     --main-background:#1e1d36;
     --btn-background:#f75842;
     ---second-primary-color:#141414;
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
 }
 section{
     padding:4rem 0;
@@ -84,7 +87,7 @@ img{
     column-gap: 20px;
 }
 .left-aside{
-    width: 25%;
+    width: 28%;
     background-color:
     var(--main-background);
     padding: 1rem 1rem;
@@ -121,7 +124,7 @@ a.active-btn{
     outline: 0;
 }
 .blog-wrap{
-    width:75%;
+    width:72%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -233,3 +236,67 @@ a.active-btn{
 /*====================
     footer style end
 ======================*/
+/*===========================
+    upcoming match style stat
+===========================*/
+.upcoming-mtc-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.upcoming-mtc-thumnail{
+    border: 1px solid rgb(227 227 227);
+    border-radius:12px;
+    padding:2rem 2rem;
+    box-shadow: 3px 7px 20px 1px #89898957;
+}
+.upcoming-mtc-info h4{
+    margin: 15px 0px;
+}
+.upcoming-mtc-info p{
+    color: #8b8a8a;
+}
+.mtc-img-wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.upcoming-mtc-info{
+    text-align: center;
+}
+.upcoming-match{
+    display: flex;
+    flex-grow: 1;
+    column-gap: 20px;
+}
+.match-aside{
+    width:30%;
+    background-color: var(--main-background);
+    color: var(--color-primary);
+    border-radius:12px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    height: 50%;
+}
+.match-menu li a.match-btn{
+    background-color: var(--color-primary);
+    display:
+    block;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 6px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin: 20px 0px;
+    outline: 0;
+    color: #141414;
+}
+.match-btn-active{
+    background-color: var(--btn-background) !important;
+    color: var(--color-primary) !important;
+    border: none !important;
+}
+/*==========================
+    upcoming match style end
+==========================*/

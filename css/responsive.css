@@ -121,3 +121,39 @@
         display: initial;
     }
 }
+/*======================================
+upcoming match section mobile responsive
+======================================*/
+@media screen and (max-width:576px) {
+    .upcoming-match{
+        flex-direction: column;
+    }
+    .match-aside{
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: var(--color-primary);
+    }
+    .upcoming-mtc-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*======================================
+upcoming match section tablet responsive
+======================================*/
+@media screen and (min-width:577px) and (max-width:992px){
+    .upcoming-match{
+        flex-direction: column;
+    }
+    .match-aside{
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: var(--color-primary);
+    }
+    .match-menu > li{
+        display: inline-flex;
+        margin: 0px 10px;
+    }
+    .upcoming-mtc-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
